@@ -57,10 +57,10 @@ if(selected == 'BMI'):
     st.title('BMI Classification')
 
     gender = st.selectbox('Gender', ['Male','Female'])
-    height = st.number_input('Height (cm)', min_value=50.0, max_value=250.0)
-    weight = st.number_input('Weight (kg)', min_value=10.0, max_value=300.0)
+    height = st.text_input('Height (cm)')
+    weight = st.text_input('Weight (kg)')
 
-    if st.button('Predict BMI'):
+    if st.button('Predict'):
 
         bmi_prediction = bmi_model.predict([
             [
@@ -160,6 +160,7 @@ if(selected == 'Riding'):
          
 
     st.success(Riding_prediction)
+
 
 
 
