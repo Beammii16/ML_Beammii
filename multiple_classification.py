@@ -71,19 +71,19 @@ if(selected == 'BMI'):
         ])
 
         if bmi_prediction[0] == 0:
-            result = 'Extremely Weak'
+            bmi_prediction = 'Extremely Weak'
         elif bmi_prediction[0] == 1:
-            result = 'Weak'
+            bmi_prediction = 'Weak'
         elif bmi_prediction[0] == 2:
-            result = 'Normal'
+            bmi_prediction = 'Normal'
         elif bmi_prediction[0] == 3:
-            result = 'Overweight'
+            bmi_prediction = 'Overweight'
         elif bmi_prediction[0] == 4:
-            result = 'Obesity'
+            bmi_prediction = 'Obesity'
         else:
-            result = 'Extreme Obesity'
+            bmi_prediction = 'Extreme Obesity'
 
-        st.success(result)
+        st.success(bmi_prediction)
  
 
 if(selected == 'Loan'):
@@ -160,6 +160,7 @@ if(selected == 'Riding'):
          
 
     st.success(Riding_prediction)
+
 
 
 
